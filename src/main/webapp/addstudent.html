@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>Add Student Data</title>
+<link rel="stylesheet" href="addstudent.css">
+<script type="text/javascript" lang="javascript"
+	src="./responsiveRegistaration.js"></script>
+</head>
+
+
+<body>
+	<h1>Add Student Data</h1>
+	<div class="main">
+		<form name="form" action="AddStudentServlet" method="post">
+
+			<input type="number" placeholder="StudentId*" name="sid">
+			<input type="text" placeholder="firstname*" name="FirstName">
+			<input type="text" placeholder="lastname" name="LastName"><br> 
+			<label>Select Gender:</label> 
+			<select name="gender">
+				<option value="M">Male</option>
+				<option value="F">Female</option>
+				<option value="O">Others</option>
+			</select> <input type="number" placeholder="Age*" name="age"> <input
+				type="text" placeholder="email" name="email"> <input
+				type="number" placeholder="mobile" name="phone"> <input
+				type="text" placeholder="addressn" name="address"> <input
+				type="text" placeholder="Date" name="dateofjoin"> <br>
+			<button type="submit" name="add">submit</button>
+
+		</form>
+		<a href="index.html">
+			<button type="submit">Back to Menu</button>
+		</a>
+	</div>
+</body>
+</html>
